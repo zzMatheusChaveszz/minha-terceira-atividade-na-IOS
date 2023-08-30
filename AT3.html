@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="estyles.css" rel="stylesheet">
+    <link href="formulario.png" rel="shortcut icon" type="image/x-icon">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <h1>Meu primeiro formulário</h1>
+    </header>
+    <article>
+        <br />
+        <form action="#">
+            <fieldset>
+                <legend>insira seu Nome</legend>
+                <label for="cNome">Nome:</label><br /> <!--começa Nome-->
+                <input type="text" size=50 name="tNome" id="cNome" required="required" />
+            </fieldset>
+            <br /><br /> <!--acaba Nome-->
+            <fieldset>
+                <legend>insira seu genêro:</legend>
+                <p>gênero:</p> <!--começa checkbox-->
+                <input type="radio" name="tipo" id="masc" value="C" />
+                <label for="masc">masculino</label><br />
+                <input type="radio" name="tipo" id="femi" value="I" />
+                <label for="femi">Feminino</label><br />
+            </fieldset>
+            <br /><br />
+            <fieldset>
+                <legend>insira seu(s) tipo de musica(s) favorita(s)</legend>
+                <p>Musicas:</p>
+                <input type="checkbox" id="Musica1" name="Musica1" value="Rock" />
+                <label for="Musica1"> Rock</label><br />
+                <input type="checkbox" id="Musica2" name="Musica2" value="Pop" />
+                <label for="Musica2"> Pop</label><br />
+                <input type="checkbox" id="Musica3" name="Musica3" value="hip-hop" />
+                <label for="Musica3"> hip-hop</label><br />
+                <input type="checkbox" id="musica4" name="musica4" value="Jazz" /> <label for="Jazz">
+                    Jazz</label>
+                <br /><br /> <!--Acaba checkbox-->
+            </fieldset>
+            <fieldset>
+                <legend>insira sua cor favorita</legend>
+                <label for="cor">Selecione sua cor favorita:</label> <!--começa lista-->
+                <select id="cor" name="cor">
+                    <option value="azul">Azul</option>
+                    <option value="vermelho">Vermelho</option>
+                    <option value="amarelo">Amarelo</option>
+                    <option value="roxo">Roxo</option>
+                    <option value="preto">Preto</option>
+                    <option value="branco">Branco</option>
+                </select><br /><br />
+            </fieldset>
+            <fieldset>
+                <legend>insira a unidade mais proxima</legend>
+                <label for="cUni">Escolha a unidade IOS mais proxima:</label>
+                <input autocomplete="on" list="unidade" name="tUni" id="cUni" placeh lder="Sua unidade" />
+                <datalist id="unidade">
+                    <option value="Santana"></option>
+                    <option value="Santo Amaro"></option>
+                    <option value="Diadema"></option>
+                    <option value="Rio de Janeiro"></option>
+                    <option value="Belo Horizonte"></option>
+                    <option value="Recife"></option>
+                    <option value="Curitiba"></option>
+                    <option value="Porto Alegre"></option>
+                </datalist>
+                <br /><br /> <!--acaba lista-->
+            </fieldset>
+            <fieldset>
+                <legend>comentários:</legend>
+                <p>Campo de observações:</p>
+                <textarea name="message" rows="10" cols="50" placeholder="Deixe aquia sua mensagem!"
+                    required> </textarea>
+                <br /><br />
+            </fieldset>
+            <input type="submit" value="Enviar" />
+        </form>
+    </article>
+</body>
+
+</html>
